@@ -14,12 +14,14 @@ This project is a ___learning management system (LMS)___ that allows users to cr
   
   <br/>There are 3 types of users in the LMS: 
   <br/>___Admins (University | Colleges | Schools) :___
+  
        - Has an Admin account
        - Can issue courses to students 
        - Has the access to accounts of Instructors
        - Has the access to accounts of Students
        - Manage the courses in each of the categories
   <br/>___Super Users (Instructors | Faculties) :___
+  
        - Can have super user account
        - An Instructor will be able to create courses
        - Can view all the category of courses
@@ -28,6 +30,7 @@ This project is a ___learning management system (LMS)___ that allows users to cr
        - Can edit their courses
        - Can post some quiz and assignments
   <br/>___Users (Students) :___
+  
        - Can have a user account
        - Can get lifetime access to any courses
        - Have access to their dashboards
@@ -40,7 +43,7 @@ This project is a ___learning management system (LMS)___ that allows users to cr
   <summary> 2. Operating Environment </summary>
 
   <br/> ___Software Configurations___
-  - The product will be operating in windows environment. 
+  - The product will be a cross-platform app. 
   - The Learning Management System is a website and shall operate in all famous browsers like Microsoft Internet Explorer,Google Chrome,and Mozilla Firefox.
   - Also it will be compatible with the IE 6.0. Most of the features will be compatible with the Mozilla Firefox & Opera 7.0 or higher version.
   - The only requirement to use this online product would be the internet connection.  
