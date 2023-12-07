@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.0" maxWidth="900.0" minHeight="700.0" minWidth="900.0" prefHeight="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <children>
+      <BorderPane layoutX="71.0" layoutY="42.0" maxHeight="700.0" prefHeight="700.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="211.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #22d3ee;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="233.0" layoutY="1.0" prefHeight="43.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <JFXButton prefHeight="38.0" prefWidth="136.0" text="Home" />
+                        <JFXButton prefHeight="38.0" prefWidth="136.0" text="Courses" />
+                        <JFXButton prefHeight="38.0" prefWidth="136.0" text="Contact" />
+                        <JFXButton prefHeight="38.0" prefWidth="136.0" text="About us" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="MenuBack" layoutX="14.0" layoutY="34.0" text="MENU" textFill="#837171">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Downloads/icons8-menu-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #22d3ee;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="slider" layoutX="38.0" layoutY="39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton prefHeight="38.0" prefWidth="176.0" text="Home" textFill="#0d0d0d">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="38.0" prefWidth="176.0" text="Courses" textFill="#0d0d0d">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="38.0" prefWidth="176.0" text="Contact" textFill="#0d0d0d">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="38.0" prefWidth="176.0" text="About us" textFill="#0d0d0d">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
