@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.StudentController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <children>
+        <BorderPane maxHeight="700.0" prefHeight="700.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="211.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #22d3ee;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <HBox layoutX="174.0" layoutY="25.0" prefHeight="42.0" prefWidth="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="574.0" AnchorPane.topAnchor="25.0" />
+                        <Label fx:id="MenuBack" layoutX="14.0" layoutY="34.0" text="MENU" textFill="#837171">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/icons8-menu-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="912.0" layoutY="33.0" prefHeight="25.0" prefWidth="415.0" promptText="Search Courses" />
+                        <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="1332.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Images/icons8-search-64.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="223.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="HOME" />
+                        <Button layoutX="398.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="50.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="COURSES" />
+                        <Button layoutX="593.0" layoutY="24.0" mnemonicParsing="false" onAction="#ContactUs" prefHeight="51.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="CONTACT" />
+                        <Button layoutX="766.0" layoutY="24.0" mnemonicParsing="false" onAction="#AboutUs" prefHeight="51.0" prefWidth="87.0" style="-fx-background-color: transparent;" text="ABOUT US" />
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #22d3ee;" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox fx:id="slider" layoutX="14.0" layoutY="53.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: tranaparent;" text="Home">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/icons8-home-50.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: tranaparent;" text="My Courses">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/icons8-ereader-50.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToDashBoard" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: tranaparent;" text="dashboard">
+                                    <graphic>
+                                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/icons8-windows-48.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: tranaparent;" text="Profile">
+                                    <graphic>
+                                        <ImageView fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/icons8-test-account-24.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="1009.0" prefWidth="1745.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="485.0" layoutY="25.0" prefHeight="53.0" prefWidth="244.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 5;" text="About Us">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <TextArea layoutX="36.0" layoutY="105.0" prefHeight="596.0" prefWidth="1242.0" style="-fx-background-color: #22d3ee;" text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sunt! Eius at quae incidunt recusandae expedita et possimus, nemo tenetur aliquid cumque, error voluptatibus, vero quo natus iure asperiores eos perferendis provident accusamus deserunt autem! Sit optio autem aliquam aliquid repudiandae a cupiditate, architecto delectus accusantium quae natus quis voluptatibus vitae ab, id animi facere porro eos. Excepturi, ad molestias. Minus rem ut harum. Quaerat hic sed a quasi iste nam distinctio culpa quam incidunt explicabo omnis, reiciendis ab dolorum dicta quod voluptas, laudantium velit enim et obcaecati nemo! Ipsa, harum. Voluptatem, vel quos possimus officiis officia suscipit accusamus quas hic dolorum provident eos quasi repudiandae expedita unde a! Reprehenderit debitis mollitia molestiae impedit qui itaque quia quo culpa facilis cum blanditiis, nemo accusamus doloribus animi minus autem quam praesentium aspernatur perspiciatis dicta enim consectetur dolorem at illo. Obcaecati hic sed corporis excepturi beatae quod. Repellat accusamus distinctio voluptas! Quae, vitae facere assumenda cumque in sed sit eius expedita tempora ut reprehenderit atque consequuntur delectus asperiores eos libero error explicabo maxime? Dolorem error quidem repellat! Vel consequuntur harum odio iure adipisci vitae fugiat! Facere iste ad itaque, exercitationem expedita aliquam ut hic aut culpa in sit tempore perspiciatis impedit dolorem, iusto eius adipisci! Dolores modi excepturi quibusdam? Exercitationem accusamus obcaecati placeat itaque quos, quia iste illo ipsam a aspernatur, quo et nesciunt facere aperiam quisquam sunt earum nostrum magnam aliquid sequi deleniti cumque sapiente in. Autem cumque, adipisci a aut ratione architecto ad pariatur distinctio, provident harum molestiae voluptas explicabo rerum recusandae. Accusamus repudiandae praesentium officiis tenetur sed natus sit asperiores! Labore harum numquam enim maiores molestias obcaecati, maxime doloremque architecto voluptates perferendis nulla unde omnis repellat necessitatibus sit natus, corporis eligendi eum nam quisquam itaque voluptatum. Quae perspiciatis eveniet cupiditate reiciendis blanditiis nihil officia ratione qui? Fugit vitae repellendus ex dolor eaque nam maiores in, modi adipisci cumque fuga deleniti tenetur aspernatur quas sit quia! Natus officia itaque cum commodi corporis autem, odit necessitatibus sint placeat consequatur dolores eum voluptatem, voluptates incidunt inventore sed vitae. Consectetur rerum commodi velit similique ducimus temporibus dolorum, mollitia nobis fugit eum quo ipsum perferendis quidem nam id necessitatibus maxime voluptate nesciunt quibusdam sit ex hic accusantium. Ullam adipisci iure debitis odio! Sed nulla, blanditiis earum eum mollitia veritatis quis iste dignissimos est, vero, maiores placeat aperiam harum. Cupiditate voluptates, obcaecati incidunt, non consectetur velit vel dignissimos id excepturi delectus quaerat quam tempore sint nihil molestiae. Ullam corporis tempore ipsa nobis libero, corrupti vel expedita, porro reprehenderit perspiciatis cumque voluptatum praesentium asperiores voluptas neque nesciunt deleniti quae atque rem nemo nihil! Voluptate aperiam, minima nam consequuntur beatae molestiae temporibus, amet et, cumque quia necessitatibus atque natus sequi ullam. Rerum quidem nisi sint nemo ipsa animi officiis voluptatibus quia, alias reprehenderit debitis, eius a ex velit dolore numquam distinctio non laborum. Ullam quisquam veritatis dolores quo blanditiis eaque, expedita vitae, mollitia asperiores numquam officiis, tempora fugiat voluptatum illum. Facere voluptates dolorum dolorem exercitationem praesentium, eum necessitatibus libero expedita, modi eos illo amet omnis quos repudiandae?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sunt! Eius at quae incidunt recusandae expedita et possimus, nemo tenetur aliquid cumque, error voluptatibus, vero quo natus iure asperiores eos perferendis provident accusamus deserunt autem! Sit optio autem aliquam aliquid repudiandae a cupiditate, architecto delectus accusantium quae natus quis voluptatibus vitae ab, id animi facere porro eos. Excepturi, ad molestias. Minus rem ut harum. Quaerat hic sed a quasi iste nam distinctio culpa quam incidunt explicabo omnis, reiciendis ab dolorum dicta quod voluptas, laudantium velit enim et obcaecati nemo! Ipsa, harum. Voluptatem, vel quos possimus officiis officia suscipit accusamus quas hic dolorum provident eos quasi repudiandae expedita unde a! Reprehenderit debitis mollitia molestiae impedit qui itaque quia quo culpa facilis cum blanditiis, nemo accusamus doloribus animi minus autem quam praesentium aspernatur perspiciatis dicta enim consectetur dolorem at illo. Obcaecati hic sed corporis excepturi beatae quod. Repellat accusamus distinctio voluptas! Quae, vitae facere assumenda cumque in sed sit eius expedita tempora ut reprehenderit atque consequuntur delectus asperiores eos libero error explicabo maxime? Dolorem error quidem repellat! Vel consequuntur harum odio iure adipisci vitae fugiat! Facere iste ad itaque, exercitationem expedita aliquam ut hic aut culpa in sit tempore perspiciatis impedit dolorem, iusto eius adipisci! Dolores modi excepturi quibusdam? Exercitationem accusamus obcaecati placeat itaque quos, quia iste illo ipsam a aspernatur, quo et nesciunt facere aperiam quisquam sunt earum nostrum magnam aliquid sequi deleniti cumque sapiente in. Autem cumque, adipisci a aut ratione architecto ad pariatur distinctio, provident harum molestiae voluptas explicabo rerum recusandae. Accusamus repudiandae praesentium officiis tenetur sed natus sit asperiores! Labore harum numquam enim maiores molestias obcaecati, maxime doloremque architecto voluptates perferendis nulla unde omnis repellat necessitatibus sit natus, corporis eligendi eum nam quisquam itaque voluptatum. Quae perspiciatis eveniet cupiditate reiciendis blanditiis nihil officia ratione qui? Fugit vitae repellendus ex dolor eaque nam maiores in, modi adipisci cumque fuga deleniti tenetur aspernatur quas sit quia! Natus officia itaque cum commodi corporis autem, odit necessitatibus sint placeat consequatur dolores eum voluptatem, voluptates incidunt inventore sed vitae. Consectetur rerum commodi velit similique ducimus temporibus dolorum, mollitia nobis fugit eum quo ipsum perferendis quidem nam id necessitatibus maxime voluptate nesciunt quibusdam sit ex hic accusantium. Ullam adipisci iure debitis odio! Sed nulla, blanditiis earum eum mollitia veritatis quis iste dignissimos est, vero, maiores placeat aperiam harum. Cupiditate voluptates, obcaecati incidunt, non consectetur velit vel dignissimos id excepturi delectus quaerat quam tempore sint nihil molestiae. Ullam corporis tempore ipsa nobis libero, corrupti vel expedita, porro reprehenderit perspiciatis cumque voluptatum praesentium asperiores voluptas neque nesciunt deleniti quae atque rem nemo nihil! Voluptate aperiam, minima nam consequuntur beatae molestiae temporibus, amet et, cumque quia necessitatibus atque natus sequi ullam. Rerum quidem nisi sint nemo ipsa animi officiis voluptatibus quia, alias reprehenderit debitis, eius a ex velit dolore numquam distinctio non laborum. Ullam quisquam veritatis dolores quo blanditiis eaque, expedita vitae, mollitia asperiores numquam officiis, tempora fugiat voluptatum illum. Facere voluptates dolorum dolorem exercitationem praesentium, eum necessitatibus libero expedita, modi eos illo amet omnis quos repudiandae?" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+               </children></AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

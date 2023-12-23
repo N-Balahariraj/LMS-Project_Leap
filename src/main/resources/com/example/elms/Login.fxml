@@ -21,9 +21,9 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
             <children>
-                <TextField alignment="CENTER" layoutX="283.0" layoutY="238.0" prefHeight="38.0" prefWidth="261.0" promptText="User ID" stylesheets="@Styles.css" />
-                <TextField alignment="CENTER" layoutX="282.0" layoutY="296.0" prefHeight="38.0" prefWidth="262.0" promptText="Password" />
-                <Button layoutX="328.0" layoutY="352.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="172.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Log In" onAction="#switchToLogin">
+                <TextField fx:id="UserIdField" alignment="CENTER" layoutX="283.0" layoutY="238.0" prefHeight="38.0" prefWidth="261.0" promptText="User ID" stylesheets="@Styles.css" />
+                <TextField fx:id="PasswordField" alignment="CENTER" layoutX="282.0" layoutY="296.0" prefHeight="38.0" prefWidth="262.0" promptText="Password" />
+                <Button layoutX="328.0" layoutY="352.0" mnemonicParsing="false" onAction="#loginValidation" prefHeight="47.0" prefWidth="172.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Log In">
                     <font>
                         <Font size="15.0" />
                     </font>

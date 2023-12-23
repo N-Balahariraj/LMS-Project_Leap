@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox id="LoginForm" alignment="CENTER" opacity="0.9" prefHeight="700.0" prefWidth="900.0" spacing="20.0" styleClass="root" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.LoginController">
+<VBox id="LoginForm" alignment="CENTER" opacity="0.9" prefHeight="700.0" prefWidth="900.0" spacing="20.0" styleClass="root" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.SignUpController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -21,9 +21,9 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
          <children>
-            <TextField alignment="CENTER" layoutX="123.0" layoutY="286.0" promptText="Instructor Name" stylesheets="@Styles.css" />
-            <TextField alignment="CENTER" layoutX="123.0" layoutY="336.0" promptText="Password" />
-            <Button layoutX="335.0" layoutY="349.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="189.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Sign Up">
+            <TextField fx:id="InsName" alignment="CENTER" layoutX="123.0" layoutY="286.0" promptText="Instructor Name" stylesheets="@Styles.css" />
+            <TextField fx:id="InsPassword" alignment="CENTER" layoutX="123.0" layoutY="336.0" promptText="Password" />
+            <Button layoutX="335.0" layoutY="349.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="47.0" prefWidth="189.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Sign Up">
                <font>
                   <Font size="15.0" />
                </font>
@@ -38,8 +38,8 @@
                   <Image url="@Images/Learning-removebg-preview1.png" />
                </image>
             </ImageView>
-            <TextField alignment="CENTER" layoutX="592.0" layoutY="286.0" promptText="Student Name" stylesheets="@Styles.css" />
-            <TextField alignment="CENTER" layoutX="592.0" layoutY="336.0" promptText="Password" stylesheets="@Styles.css" />
+            <TextField fx:id="StuName" alignment="CENTER" layoutX="592.0" layoutY="286.0" promptText="Student Name" stylesheets="@Styles.css" />
+            <TextField fx:id="StuPassword" alignment="CENTER" layoutX="592.0" layoutY="336.0" promptText="Password" stylesheets="@Styles.css" />
             <Button layoutX="755.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Log In">
                <font>
                   <Font size="14.0" />
