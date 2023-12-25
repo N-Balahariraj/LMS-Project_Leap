@@ -1,24 +1,24 @@
 package com.example.elms.Schema;
 
 public class CourseCard {
-    String Url;
+    String ImgUrl;
     String Duration;
     String Rate;
     String Name;
 
-    public CourseCard(String url, String duration, String rate, String name) {
-        Url = url;
+    public CourseCard(String imgUrl, String duration, String rate, String name) {
+        ImgUrl = imgUrl;
         Duration = duration;
         Rate = rate;
         Name = name;
     }
 
-    public String getUrl() {
-        return Url;
+    public  String getImgUrl() {
+        return ImgUrl;
     }
 
-    public void setUrl(String url) {
-        Url = url;
+    public void setImgUrl(String imgUrl) {
+        ImgUrl = imgUrl;
     }
 
     public String getDuration() {

@@ -50,12 +50,12 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Label>
-            <Label prefHeight="30.0" prefWidth="101.0" text="4.3" textFill="#22d3ee">
+            <Label fx:id="RateLb" prefHeight="30.0" prefWidth="101.0" text="4.3" textFill="#22d3ee">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
                <graphic>
-                  <ImageView fx:id="RateLb" fitHeight="16.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="16.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/StarRate.png" />
                      </image>

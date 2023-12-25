@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -42,10 +43,10 @@
                         <Image url="@images/icons8-search-64.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="238.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: transaparent;" text="HOME" />
-                  <Button layoutX="393.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: transaparent;" text="COURSES" />
-                  <Button layoutX="557.0" layoutY="25.0" mnemonicParsing="false" onAction="#ContactUs" prefHeight="47.0" prefWidth="88.0" style="-fx-background-color: transaparent;" text="CONTACT" />
-                  <Button layoutX="745.0" layoutY="24.0" mnemonicParsing="false" onAction="#AboutUs" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: transaparent;" text="ABOUT US" />
+                  <Button layoutX="238.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: white;" text="HOME" />
+                  <Button layoutX="393.0" layoutY="24.0" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: white;" text="COURSES" />
+                  <Button layoutX="557.0" layoutY="25.0" mnemonicParsing="false" onAction="#ContactUs" prefHeight="47.0" prefWidth="88.0" style="-fx-background-color: white;" text="CONTACT" />
+                  <Button layoutX="745.0" layoutY="24.0" mnemonicParsing="false" onAction="#AboutUs" prefHeight="48.0" prefWidth="88.0" style="-fx-background-color: white;" text="ABOUT US" />
                </children>
             </AnchorPane>
          </top>
@@ -54,7 +55,7 @@
                <children>
                   <VBox fx:id="slider" layoutX="14.0" layoutY="53.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="53.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="Home">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #22d3ee;" text="Home">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -66,7 +67,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="My Courses">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #22d3ee;" text="My Courses">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -78,7 +79,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToDashBoard" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="Dashboard">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToDashBoard" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #22d3ee;" text="Dashboard">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -90,7 +91,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="Profile">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #22d3ee;" text="Profile">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -115,7 +116,7 @@
                         <Image url="@images/crreate-a-3D-icon-of-a-student-with-laptop.png" />
                      </image>
                   </ImageView>
-                  <AnchorPane layoutX="459.0" layoutY="-2.0" prefHeight="274.0" prefWidth="737.0" style="-fx-background-color: #a5f3fc;">
+                  <AnchorPane layoutX="459.0" layoutY="-2.0" prefHeight="274.0" prefWidth="711.0" style="-fx-background-color: #a5f3fc;">
                      <children>
                         <Label layoutX="188.0" layoutY="58.0" prefHeight="79.0" prefWidth="558.0" text="GENIUS MINDS">
                            <font>
@@ -128,11 +129,16 @@
                            </font>
                         </Label>
                      </children></AnchorPane>
-                  <AnchorPane layoutX="46.0" layoutY="376.0" prefHeight="230.0" prefWidth="436.0" style="-fx-border-color: black;">
-                     <children>
-                        <ImageView fitHeight="232.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                     </children>
-                  </AnchorPane>
+                  <ScrollPane layoutX="20.0" layoutY="354.0" prefHeight="260.0" prefWidth="1128.0">
+                     <content>
+                        <HBox fx:id="CourseBox" prefHeight="238.0" prefWidth="1173.0" />
+                     </content>
+                  </ScrollPane>
+                  <Label layoutX="20.0" layoutY="298.0" prefHeight="36.0" prefWidth="249.0" text="Courses : ">
+                     <font>
+                        <Font name="Vijaya Bold" size="45.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </center>

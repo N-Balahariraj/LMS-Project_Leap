@@ -2,11 +2,11 @@ package com.example.elms.TableControllers;
 
 import com.example.elms.Helpers.JavaSQL;
 import com.example.elms.Schema.CourseCard;
-import com.example.elms.Schema.CourseTable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
@@ -29,32 +29,15 @@ public class CourseCardController {
     private Label DurationLb;
 
     @FXML
-    private ImageView RateLb;
+    private Label RateLb;
 
-    ObservableList<CourseCard> CourseList = FXCollections.observableArrayList();
-    public void refreshTable() {
-
-        CourseList.clear();
-
-        JavaSQL connectNow = new JavaSQL();
-        Connection newCon = connectNow.ConnectDB();
-        String C_Query = "Select Image,Course_Name,Duration,Rating from Course";
-
-        try {
-
-            Statement stmt = newCon.createStatement();
-            ResultSet rs = stmt.executeQuery(C_Query);
-            while (rs.next()) {
-                CourseList.add(new CourseCard(
-                        rs.getString("Name"),
-                        rs.getString("Domain"),
-                        rs.getString("Duration"),
-                        rs.getString("Rating")
-                ));
-            }
-
-        } catch (Exception e) {
-            System.out.println("Some Error occurred in CourseController : " + e);
-        }
+    public void setCourses(CourseCard course){
+        Image image = new Image(getClass().getResourceAsStream(course.getImgUrl()));
+//        Image image = new Image("src/main/resources/com/example/elms/images/Artificial inteligence.jpg");
+        CourseImg.setImage(image);
+        CourseLb.setText(course.getName());
+        DurationLb.setText(course.getDuration());
+        RateLb.setText(course.getRate());
     }
+
 }
