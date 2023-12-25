@@ -1,19 +1,18 @@
-package com.example.elms;
+package com.example.elms.AppControllers;
 
+import com.example.elms.E_LMS;
+import com.example.elms.TableControllers.CourseController;
+import com.example.elms.TableControllers.InstructorController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 public class AdminController {
-
 
     @FXML
     public void switchToHome(ActionEvent event) throws IOException {
@@ -51,25 +50,4 @@ public class AdminController {
         stage.show();
     }
 
-//    @FXML
-//    public TextField StuID;
-//    int id = 10;
-//
-//    @FXML
-//    public TextField StuName;
-//    String name = "Vijay";
-//
-//    @FXML
-//    public TextField StuNo;
-//    String no = "123865429";
-//
-//    @FXML
-//    public TextField StuMail;
-//    String mail = "vijay@gmail.com";
-//
-//    @FXML
-//    public void showStudent(ActionEvent event) throws SQLException {
-//        StudentTable Stu = new StudentTable();
-//        Stu.showStudent(StudentData);
-//    }
 }

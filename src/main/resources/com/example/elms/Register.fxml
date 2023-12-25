@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox id="LoginForm" alignment="CENTER" opacity="0.9" prefHeight="700.0" prefWidth="900.0" spacing="20.0" styleClass="root" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.SignUpController">
+<VBox id="LoginForm" alignment="CENTER" opacity="0.9" prefHeight="700.0" prefWidth="900.0" spacing="20.0" styleClass="root" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.AppControllers.SignUpController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -30,12 +30,12 @@
             </Button>
             <ImageView fitHeight="264.0" fitWidth="224.0" layoutX="93.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Images/Instructors.png" />
+                  <Image url="@images/Instructors.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="191.0" fitWidth="231.0" layoutX="524.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Images/Learning-removebg-preview1.png" />
+                  <Image url="@images/Learning-removebg-preview1.png" />
                </image>
             </ImageView>
             <TextField fx:id="StuName" alignment="CENTER" layoutX="592.0" layoutY="286.0" promptText="Student Name" stylesheets="@Styles.css" />

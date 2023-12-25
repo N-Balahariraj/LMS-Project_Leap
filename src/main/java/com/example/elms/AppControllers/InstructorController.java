@@ -1,19 +1,16 @@
-package com.example.elms;
+package com.example.elms.AppControllers;
 
+import com.example.elms.E_LMS;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class StudentController {
-
-    @FXML
-    private Button LogOutButton;
+public class InstructorController {
 
     @FXML
     public void switchToHome(ActionEvent event) throws IOException {
@@ -25,8 +22,8 @@ public class StudentController {
     }
 
     @FXML
-    public void switchToDashBoard(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("StudentDashBoard.fxml"));
+    public void switchToCourses(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("InstructorCourses.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
@@ -34,8 +31,8 @@ public class StudentController {
     }
 
     @FXML
-    public void switchToCourses(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("StudentCourses.fxml"));
+    public void switchToDashBoard(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("InsDashBoard.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
@@ -50,7 +47,6 @@ public class StudentController {
         stage.setScene(scene);
         stage.show();
     }
-
 
     @FXML
     public void AboutUs(ActionEvent event) throws IOException {
@@ -69,6 +65,5 @@ public class StudentController {
         stage.setScene(scene);
         stage.show();
     }
-
 
 }
