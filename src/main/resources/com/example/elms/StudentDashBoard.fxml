@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -37,12 +36,6 @@
                 <Font size="14.0" />
               </font>
             </Label>
-            <TextField layoutX="912.0" layoutY="33.0" prefHeight="25.0" prefWidth="415.0" promptText="Search Courses" />
-            <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="1332.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-              <image>
-                <Image url="@images/icons8-search-64.png" />
-              </image>
-            </ImageView>
             <Label layoutX="404.0" layoutY="25.0" prefHeight="46.0" prefWidth="79.0" />
                   <Button layoutX="787.0" layoutY="30.0" mnemonicParsing="false" onAction="#AboutUs" style="-fx-background-color: transperant;" text="ABOUT US" />
                   <Button layoutX="615.0" layoutY="34.0" mnemonicParsing="false" onAction="#ContactUs" style="-fx-background-color: transperant;" text="CONTACT" />
@@ -54,9 +47,9 @@
       <left>
         <AnchorPane fx:id="slider1" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #22d3ee;" BorderPane.alignment="CENTER">
           <children>
-            <VBox fx:id="slider2" layoutX="14.0" layoutY="53.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="53.0">
+            <VBox fx:id="slider2" layoutX="14.0" layoutY="53.0" prefHeight="209.0" prefWidth="155.0" AnchorPane.bottomAnchor="747.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="53.0">
               <children>
-                        <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="54.0" prefWidth="112.0" style="-fx-background-color: transperant;" text="Home">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: transperant;" text="Home">
                            <graphic>
                     <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                       <image>
@@ -68,7 +61,7 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#switchToCourses" prefHeight="59.0" prefWidth="149.0" style="-fx-background-color: transperant;" text="My Courses">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="41.0" prefWidth="160.0" style="-fx-background-color: transperant;" text="My Courses">
                            <graphic>
                     <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                       <image>
@@ -79,8 +72,11 @@
                            <font>
                               <Font size="17.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
                         </Button>
-                        <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#switchToDashBoard" prefHeight="62.0" prefWidth="136.0" style="-fx-background-color: transperant;" text="Dashboard">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToDashBoard" prefHeight="47.0" prefWidth="160.0" style="-fx-background-color: transperant;" text="Dashboard">
                            <graphic>
                     <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                       <image>
@@ -91,8 +87,11 @@
                            <font>
                               <Font size="17.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#switchToProfile" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: transperant;" text="Profile">
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: transperant;" text="Profile">
                            <graphic>
                               <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -116,31 +115,58 @@
               <children>
                 <AnchorPane prefHeight="246.0" prefWidth="254.0">
                   <children>
-                    <ImageView fitHeight="234.0" fitWidth="236.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8),10,0,0,0);">
+                    <ImageView fx:id="CourseImg" fitHeight="234.0" fitWidth="236.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8),10,0,0,0);">
                       <image>
-                        <Image url="@images/Artificial%20inteligence.jpg" />
+                        <Image url="@images/Artificial%20intelligence.jpg" />
                       </image>
                     </ImageView>
                   </children>
                 </AnchorPane>
                 <AnchorPane prefHeight="247.0" prefWidth="293.0">
                   <children>
-                    <Label layoutX="65.0" layoutY="36.0" text="Artificial Intelligence">
+                    <Label fx:id="CourseLb" layoutX="9.0" layoutY="14.0" text="Artificial Intelligence">
+                      <font>
+                        <Font name="Palatino Linotype Bold Italic" size="28.0" />
+                      </font>
+                    </Label>
+                    <Label fx:id="DurationLb" layoutX="135.0" layoutY="73.0" text="12 Weeks" textFill="#22d3ee">
                       <font>
                         <Font name="System Bold" size="18.0" />
                       </font>
                     </Label>
-                    <Label layoutX="88.0" layoutY="83.0" text="Daniel Taylor">
+                    <Label fx:id="RateLb" layoutX="135.0" layoutY="116.0" text="4.3" textFill="#22d3ee">
                       <font>
                         <Font name="System Bold" size="18.0" />
                       </font>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/StarRate.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
                     </Label>
-                    <Label layoutX="98.0" layoutY="124.0" text="01.12.2022">
-                      <font>
-                        <Font name="System Bold" size="18.0" />
-                      </font>
-                    </Label>
-                    <Button layoutX="9.0" layoutY="196.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #22d3ee;" text="Watch now!" />
+                    <Button contentDisplay="RIGHT" layoutX="9.0" layoutY="185.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="270.0" style="-fx-background-color: #22d3ee;" text="Watch now">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/play%20course.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Label layoutX="14.0" layoutY="69.0" prefHeight="35.0" prefWidth="120.0" text="Duration :">
+                                 <font>
+                                    <Font name="System Bold Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="112.0" prefHeight="35.0" prefWidth="120.0" text="Ratings : ">
+                                 <font>
+                                    <Font name="System Bold Italic" size="21.0" />
+                                 </font>
+                              </Label>
                   </children>
                 </AnchorPane>
               </children>
@@ -193,6 +219,16 @@
                         </Label>
                      </children>
                   </AnchorPane>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="628.0" layoutY="158.0" onMouseClicked="#showNextCourse" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/play%20course.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="46.0" layoutY="158.0" onMouseClicked="#showPreviousCourse" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Inverted%20play%20course.png" />
+                     </image>
+                  </ImageView>
           </children>
         </AnchorPane>
       </center>

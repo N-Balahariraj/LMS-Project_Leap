@@ -5,13 +5,16 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -110,7 +113,31 @@
                 </AnchorPane>
             </left>
             <center>
-                <AnchorPane prefHeight="1009.0" prefWidth="1745.0" BorderPane.alignment="CENTER" />
+                <AnchorPane prefHeight="1009.0" prefWidth="1745.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="33.0" layoutY="88.0" prefHeight="512.0" prefWidth="1102.0">
+                     <content>
+                        <GridPane fx:id="CoursesGrid" prefHeight="4.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <Button alignment="TOP_CENTER" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="47.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Courses">
+                     <font>
+                        <Font name="Heebo Regular" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets top="-1.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="35.0" fitWidth="28.0" layoutX="160.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/loading-arrow.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
             </center>
         </BorderPane>
     </children>

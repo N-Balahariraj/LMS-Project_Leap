@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="CourseCard" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="396.0" style="-fx-border-width: 2px; -fx-border-color: #22d3ee; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elms.TableControllers.CourseCardController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="190.0">
+      <ImageView fx:id="CourseImg" fitHeight="216.0" fitWidth="190.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Introduction to Computer Science.jpg" />
+         </image>
+      </ImageView>
+      </VBox>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="190.0">
+         <children>
+            <Label fx:id="CourseLb" alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="190.0" text="Introduction To &#10;Computer Science">
+               <font>
+                  <Font name="Footlight MT Light" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="30.0" prefWidth="190.0">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="87.0" text="Duration : ">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="DurationLb" prefHeight="30.0" prefWidth="101.0" text="4 Weeks" textFill="#22d3ee">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="11.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="190.0">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="87.0" text="Ratings : ">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="RateLb" prefHeight="30.0" prefWidth="101.0" text="4.3" textFill="#22d3ee">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/StarRate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="11.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="167.0" style="-fx-background-color: #22d3ee;" text="Start Now">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/play course.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="8.0" top="25.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets left="12.0" />
+         </HBox.margin></VBox>
+   </children>
+</HBox>

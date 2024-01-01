@@ -49,6 +49,15 @@ public class InstructorController {
     }
 
     @FXML
+    public void LogOut(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("Login.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
     public void AboutUs(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(E_LMS.class.getResource("AboutUs.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

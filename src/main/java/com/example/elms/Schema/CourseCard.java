@@ -2,11 +2,11 @@ package com.example.elms.Schema;
 
 public class CourseCard {
     String ImgUrl;
+    String Name;
     String Duration;
     String Rate;
-    String Name;
 
-    public CourseCard(String imgUrl, String duration, String rate, String name) {
+    public CourseCard(String imgUrl, String name, String duration, String rate) {
         ImgUrl = imgUrl;
         Duration = duration;
         Rate = rate;

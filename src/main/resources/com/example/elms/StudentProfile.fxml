@@ -37,12 +37,6 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <TextField layoutX="912.0" layoutY="33.0" prefHeight="25.0" prefWidth="415.0" promptText="Search Courses" />
-                        <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="1332.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@images/icons8-search-64.png" />
-                            </image>
-                        </ImageView>
                   <Button layoutX="213.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="51.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="HOME" />
                   <Button layoutX="390.0" layoutY="25.0" mnemonicParsing="false" onAction="#switchToCourses" prefHeight="49.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="COURSES" />
                   <Button layoutX="586.0" layoutY="25.0" mnemonicParsing="false" onAction="#ContactUs" prefHeight="49.0" prefWidth="84.0" style="-fx-background-color: transparent;" text="CONTACT" />
@@ -141,17 +135,17 @@
                         <Font name="Arial Bold Italic" size="18.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="487.0" layoutY="324.0" prefHeight="25.0" prefWidth="253.0" />
-                  <TextField layoutX="487.0" layoutY="371.0" prefHeight="25.0" prefWidth="253.0" />
-                  <TextField layoutX="487.0" layoutY="417.0" prefHeight="25.0" prefWidth="253.0" />
-                  <TextField layoutX="487.0" layoutY="462.0" prefHeight="25.0" prefWidth="253.0" />
+                  <TextField fx:id="NameTxt" layoutX="487.0" layoutY="324.0" prefHeight="25.0" prefWidth="253.0" />
+                  <TextField fx:id="IdTxt" layoutX="487.0" layoutY="371.0" prefHeight="25.0" prefWidth="253.0" />
+                  <TextField fx:id="ContactTxt" layoutX="487.0" layoutY="417.0" prefHeight="25.0" prefWidth="253.0" />
+                  <TextField fx:id="MailTxt" layoutX="487.0" layoutY="462.0" prefHeight="25.0" prefWidth="253.0" />
                   <ButtonBar layoutX="310.0" layoutY="575.0" prefHeight="40.0" prefWidth="200.0" />
-                  <Button layoutX="383.0" layoutY="536.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Update">
+                  <Button layoutX="383.0" layoutY="536.0" mnemonicParsing="false" onAction="#Update" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="Update">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button layoutX="584.0" layoutY="536.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="LogOut">
+                  <Button layoutX="584.0" layoutY="536.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #22d3ee; -fx-background-radius: 10;" text="LogOut">
                      <font>
                         <Font size="15.0" />
                      </font>
