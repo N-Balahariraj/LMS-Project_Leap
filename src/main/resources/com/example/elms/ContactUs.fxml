@@ -36,12 +36,6 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
-                        <TextField layoutX="912.0" layoutY="33.0" prefHeight="25.0" prefWidth="415.0" promptText="Search Courses" />
-                        <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="1332.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@images/icons8-search-64.png" />
-                            </image>
-                        </ImageView>
                         <Label layoutX="404.0" layoutY="25.0" prefHeight="46.0" prefWidth="79.0" />
                         <Button layoutX="787.0" layoutY="30.0" mnemonicParsing="false" onAction="#AboutUs" style="-fx-background-color: transperant;" text="ABOUT US" />
                         <Button layoutX="615.0" layoutY="34.0" mnemonicParsing="false" onAction="#ContactUs" style="-fx-background-color: transperant;" text="CONTACT" />

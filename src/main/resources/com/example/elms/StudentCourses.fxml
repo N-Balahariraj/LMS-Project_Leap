@@ -115,7 +115,7 @@
             <center>
                 <AnchorPane prefHeight="1009.0" prefWidth="1745.0" BorderPane.alignment="CENTER">
                <children>
-                  <ScrollPane layoutX="33.0" layoutY="88.0" prefHeight="512.0" prefWidth="1102.0">
+                  <ScrollPane layoutX="17.0" layoutY="88.0" prefHeight="582.0" prefWidth="1310.0">
                      <content>
                         <GridPane fx:id="CoursesGrid" prefHeight="4.0" prefWidth="0.0">
                           <rowConstraints>

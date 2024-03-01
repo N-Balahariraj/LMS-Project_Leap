@@ -27,7 +27,7 @@ public class CourseCardController {
 
 
     public void setCourses(CourseCard course) throws FileNotFoundException {
-        InputStream imageStream = getImageStreamFromPath("C:\\Users\\balah\\IdeaProjects\\Leap_Project\\src\\main\\resources\\com\\example\\elms\\"+course.getImgUrl());
+        InputStream imageStream = getImageStreamFromPath("C:\\Users\\Balahariraj\\IdeaProjects\\E-LMS\\src\\main\\resources\\com\\example\\elms\\"+course.getImgUrl());
         Image image = new Image(imageStream);
         CourseImg.setImage(image);
         CourseLb.setText(course.getName());

@@ -114,7 +114,7 @@ public class StudentController implements Initializable {
 
             for(int i = 0;i < 5;i++){
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(Paths.get("C:\\Users\\balah\\IdeaProjects\\Leap_Project\\src\\main\\resources\\com\\example\\elms\\StudentHomeCourseCard.fxml").toUri().toURL());
+                fxmlLoader.setLocation(Paths.get("C:\\Users\\Balahariraj\\IdeaProjects\\E-LMS\\src\\main\\resources\\com\\example\\elms\\StudentHomeCourseCard.fxml").toUri().toURL());
                 HBox Box = fxmlLoader.load();
                 CourseCardController CCC = fxmlLoader.getController();
                 CCC.setCourses(CourseList.get(i));
@@ -142,12 +142,12 @@ public class StudentController implements Initializable {
             int Row = 1;
             for(int i = 0;i < CourseList.size();i++){
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(Paths.get("C:\\Users\\balah\\IdeaProjects\\Leap_Project\\src\\main\\resources\\com\\example\\elms\\StudentCoursesCourseCard.fxml").toUri().toURL());
+                fxmlLoader.setLocation(Paths.get("C:\\Users\\Balahariraj\\IdeaProjects\\E-LMS\\src\\main\\resources\\com\\example\\elms\\StudentCoursesCourseCard.fxml").toUri().toURL());
                 VBox Box = fxmlLoader.load();
                 CourseCardController CCC = fxmlLoader.getController();
                 CCC.setCourses(CourseList.get(i));
 
-                if(Column == 5){
+                if(Column == 6){
                     Column = 0;
                     Row++;
                 }
